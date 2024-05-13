@@ -70,3 +70,45 @@ header{
     color:#fff;
     text-transform: uppercase;
 }
+/*anasayfa*/
+
+.inner_anasayfa{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+}
+.child_anasayfa{
+  flex-basis: 45%  ;
+}
+.child_anasayfa h1{
+    font-size: 50px;
+    color:rgb(236, 83, 83);
+
+}
+
+.span_child{
+    color:aqua;
+}
+.child_anasayfa p{
+    font-size: 35px;
+    margin-bottom: 12px;
+    color:#fff
+
+}
+.btn{
+    background:#390000;
+    padding: 12px 28px;
+    border-radius: 20px;
+    color:#fff;
+    border: 1px solid #390000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+.btn:hover{
+    background:transparent ;
+}
