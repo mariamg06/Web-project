@@ -1,99 +1,94 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portföyüm</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Mariam Gasanova</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
-    <header>
-        <nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">MARIAM GASANOVA</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#section-home">Anasayfa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-about">Hakkında</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-cv">Özgeçmiş</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-city">Şehrim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-heritage">Mirasımız</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-contact">İletişim</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <main class="container mt-5 pt-5">
-        <section id="section-home" class="py-5">
-            <h1>Hoş Geldiniz!</h1>
-            <p>Bu benim profesyonel portföy sitemdir. Burada kariyerim, becerilerim ve projelerim hakkında bilgiler bulabilirsiniz.</p>
-        </section>
-        
-        <section id="section-about" class="py-5">
-            <h2>Hakkımda</h2>
-            <p>Bilgi teknolojileri alanında 10 yıllık tecrübemle ...</p>
-        </section>
-        
-        <section id="section-cv" class="py-5">
-            <h2>Özgeçmiş</h2>
-            <p>Eğitim bilgilerim ve iş tecrübelerim...</p>
-        </section>
-        
-        <section id="section-city" class="py-5">
-            <h2>Şehrim - Tiflis</h2>
-            <p>Tiflis hakkında genel bilgiler, neler yapılabilir vb.</p>
-        </section>
-        
-        <section id="section-heritage" class="py-5">
-            <h2>Mirasımız</h2>
-            <p>Tiflis kültürel mirası...</p>
-        </section>
-        
-        <section id="section-contact" class="py-5">
-            <h2>İletişim</h2>
-            <form id="contactForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Adınız</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-posta Adresiniz</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mesajınız</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Gönder</button>
-                <button type="reset" class="btn btn-secondary">Temizle</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer class="footer mt-auto py-3 bg-dark text-white">
-        <div class="container text-center">
-            <p>&copy; 2024 Benim Portföyüm</p>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mariam Gasanova</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#anasayfa">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hakkinda">Hakkında</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ozgecmis">Özgeçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sehrim">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mirasimiz">Mirasımız</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#iletisim">İletişim</a>
+                </li>
+            </ul>
         </div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    </nav>
+
+    <!-- Logo -->
+    <div class="text-center my-4">
+        <h1>Mariam Gasanova</h1>
+    </div>
+
+    <!-- Social Media Buttons -->
+    <div class="text-center">
+        <a href="#" class="btn btn-social btn-outline-primary"></a>
+        <a href="#" class="btn btn-social btn-outline-info"></a>
+        <a href="#" class="btn btn-social btn-outline-success"></a>
+        <a href="#" class="btn btn-social btn-outline-warning"></a>
+    </div>
+
+    <!-- Content -->
+    <div id="anasayfa" class="container mt-5">
+        <h2>Anasayfa</h2>
+        <p>Burası anasayfa içeriği. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum massa sit amet lorem consectetur, nec bibendum velit ultrices.</p>
+    </div>
+
+    <div id="hakkinda" class="container mt-5">
+        <h2>Hakkında</h2>
+        <p>Burası hakkında içeriği. Integer id risus nec tellus fermentum hendrerit. Sed dapibus justo sit amet quam interdum, nec faucibus purus suscipit.</p>
+    </div>
+
+    <div id="ozgecmis" class="container mt-5">
+        <h2>Özgeçmiş</h2>
+        <p>Burası özgeçmiş içeriği. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac arcu ac metus lacinia dictum.</p>
+    </div>
+
+    <div id="sehrim" class="container mt-5">
+        <h2>Şehrim</h2>
+        <p>Burası şehrim içeriği. Nulla facilisi. Nullam vel ex vel leo tempor pulvinar ut nec tellus.</p>
+    </div>
+
+    <div id="mirasimiz" class="container mt-5">
+        <h2>Mirasımız</h2>
+        <p>Burası mirasımız içeriği. Suspendisse luctus nunc id semper convallis. Aliquam non commodo lorem.</p>
+    </div>
+
+    <div id="iletisim" class="container mt-5">
+        <h2>İletişim</h2>
+        <p>Burası iletişim içeriği. Nullam pharetra tellus at nunc aliquam, vel molestie enim scelerisque.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
