@@ -1,13 +1,22 @@
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('submitBtn').addEventListener('click', function (event) {
-        event.preventDefault();
-        // Form doğrulama kodları buraya
-        alert('Form gönderildi!');
-    });
+// script.js
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
-    document.getElementById('resetBtn').addEventListener('click', function () {
-        // Formu temizleme kodları buraya
-        document.getElementById('contactForm').reset();
-        alert('Form temizlendi!');
-    });
+document.querySelector('.prev').addEventListener('click', () => {
+    moveSlide(-1);
 });
+
+document.querySelector('.next').addEventListener('click', () => {
+    moveSlide(1);
+});
+
+function moveSlide(step) {
+    currentSlide += step;
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+    document.querySelector('.slides').style.transform = `translateX(${-100 * currentSlide}%)`;
+}

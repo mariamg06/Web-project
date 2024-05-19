@@ -27,6 +27,9 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+h3{
+    font-weight: bold;
+}
 p {
     font-size: 1.2em;
 }
@@ -79,6 +82,41 @@ img {
     background-color: #007bff;
     border-color: #007bff;
 }
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Slider genişliği */
+    margin: auto;
+    overflow: hidden;
+}
 
-#contactForm button.btn-primary:hover {
-   
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.bttn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
